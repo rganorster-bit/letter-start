@@ -1,1 +1,108 @@
-index.html
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎲 אות ראשונה - אות אחרונה</title>
+
+<style>
+
+body{
+margin:0;
+background:#0D47A1;
+font-family:Arial,sans-serif;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+h1{
+font-size:42px;
+margin-bottom:30px;
+}
+
+.letters{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+margin:40px 0;
+}
+
+.card{
+width:170px;
+height:170px;
+background:white;
+border-radius:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:110px;
+font-weight:bold;
+color:#0D47A1;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.plus{
+font-size:60px;
+font-weight:bold;
+}
+
+.timer{
+font-size:65px;
+font-weight:bold;
+margin:35px;
+}
+
+button{
+
+padding:18px 30px;
+font-size:24px;
+font-weight:bold;
+border:none;
+border-radius:15px;
+cursor:pointer;
+margin:10px;
+}
+
+#startBtn{
+background:#FFD400;
+}
+
+#newBtn{
+background:#4CAF50;
+color:white;
+display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🎲 אות ראשונה - אות אחרונה</h1>
+
+<div class="letters">
+
+<div class="card" id="firstLetter">א</div>
+
+<div class="plus">+</div>
+
+<div class="card" id="lastLetter">ה</div>
+
+</div>
+
+<div class="timer" id="timer">
+01:00
+</div>
+
+<button id="startBtn">
+▶ התחל סיבוב
+</button>
+
+<button id="newBtn">
+🎲 זוג חדש
+</button>
